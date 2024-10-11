@@ -11,6 +11,10 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 :::
 
+## 15.2.2 • [Train: stable]
+
+- chore(deps): update container image thelounge/thelounge to 4.4.3@cf964ca by renovate (#27576) • [`4edc0bc`](https://github.com/truecharts/charts/commit/4edc0bc954d9646f8728c232c52c580dda42f78c) • [@TrueCharts Bot] (2024-10-11)
+
 ## 15.2.1 • [Train: stable]
 
 - Commit daily changes • [`d1abf80`](https://github.com/truecharts/charts/commit/d1abf80d1801bf7aef60884000acb8662fd08121) • [@TrueCharts-Bot] (2024-10-09)
