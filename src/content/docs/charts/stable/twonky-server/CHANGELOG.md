@@ -11,6 +11,10 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 :::
 
+## 7.2.1 • [Train: stable]
+
+- chore(deps): update container image dtjs48jkt/twonkyserver to latest@d2a08a6 by renovate (#27550) • [`3c19df2`](https://github.com/truecharts/charts/commit/3c19df2b82c66f56160ee72eabe9a58beee3a7b9) • [@TrueCharts Bot] (2024-10-11)
+
 ## 7.2.0 • [Train: stable]
 
 - Commit daily changes • [`d1abf80`](https://github.com/truecharts/charts/commit/d1abf80d1801bf7aef60884000acb8662fd08121) • [@TrueCharts-Bot] (2024-10-09)
