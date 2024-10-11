@@ -11,6 +11,10 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 :::
 
+## 12.2.3 • [Train: stable]
+
+- chore(deps): update container image ghcr.io/hotio/whisparr to v3-3.0.0.617@341ade6 by renovate (#27563) • [`8d4030e`](https://github.com/truecharts/charts/commit/8d4030e01ea395905ee39441a192555dfb47b7a9) • [@TrueCharts Bot] (2024-10-11)
+
 ## 12.2.2 • [Train: stable]
 
 - chore(deps): update container image ghcr.io/hotio/whisparr to v3-3.0.0.617@726dba5 by renovate (#27544) • [`0d05649`](https://github.com/truecharts/charts/commit/0d05649cd72864649e3613e2892d52ad4026e53e) • [@TrueCharts Bot] (2024-10-10)
