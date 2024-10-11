@@ -41,8 +41,10 @@ Systems complying with these minimum specifications will be able to run **some**
 
 **VM Disk Storage:** HDD
 
-- 1x sparsely allocated disk of minimum 256GB size
-- 1x sparsely allocated disk of minimum 768GB size
+- 1x sparsely allocated disk of minimum 500GB size
+
+*The disk has to be either an enterprise-grade SSD (preferably NVMe) or a ZFS zvol/dataset with async set to *off*
+
 
 ### Example Minimum Spec System
 
@@ -71,8 +73,9 @@ Systems complying with these recommended specifications will likely be able to r
 
 **VM Disk Storage:** SSD
 
-- 1x sparsely allocated disk of minimum 256GB size
-- 1x sparsely allocated disk of minimum 768GB size
+- 1x sparsely allocated disk of minimum 1TB size
+
+*The disk has to be either an enterprise-grade SSD (preferably NVMe) or a ZFS zvol/dataset with async set to *off*
 
 ### Example Recommended Spec System
 
