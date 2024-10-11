@@ -43,7 +43,7 @@ Systems complying with these minimum specifications will be able to run **some**
 
 - 1x sparsely allocated disk of minimum 500GB size
 
-*The disk has to be either an enterprise-grade SSD (preferably NVMe) or a ZFS zvol/dataset with async set to *off*
+*The disk has to be either an enterprise-grade SSD (preferably NVMe) or a ZFS zvol/dataset with sync set to *disabled*
 
 
 ### Example Minimum Spec System
@@ -75,7 +75,7 @@ Systems complying with these recommended specifications will likely be able to r
 
 - 1x sparsely allocated disk of minimum 1TB size
 
-*The disk has to be either an enterprise-grade SSD (preferably NVMe) or a ZFS zvol/dataset with async set to *off*
+*The disk has to be either an enterprise-grade SSD (preferably NVMe) or a ZFS zvol/dataset with sync set to *disabled*
 
 ### Example Recommended Spec System
 
