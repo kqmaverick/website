@@ -11,6 +11,10 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 :::
 
+## 20.0.1 • [Train: stable]
+
+- chore(deps): update container image docker.io/odoo to 18.0@248a3b6 by renovate (#27603) • [`12ae1c9`](https://github.com/truecharts/charts/commit/12ae1c933638152d12770e60dea5bb410e0c614b) • [@TrueCharts Bot] (2024-10-12)
+
 ## 20.0.0 • [Train: stable]
 
 - chore(deps): update container image docker.io/odoo to v18.0@3b4bd94 by renovate (#27435) • [`21bc86d`](https://github.com/truecharts/charts/commit/21bc86d266770ae46da81aa6dd6565b819621594) • [@TrueCharts Bot] (2024-10-09)

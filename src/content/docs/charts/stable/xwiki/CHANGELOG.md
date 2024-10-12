@@ -11,6 +11,10 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 :::
 
+## 14.6.4 • [Train: stable]
+
+- chore(deps): update container image xwiki to 16.8.0-postgres-tomcat@e172bb5 by renovate (#27610) • [`7e9c821`](https://github.com/truecharts/charts/commit/7e9c8219fc3d5e283d88406d90ad173705941356) • [@TrueCharts Bot] (2024-10-12)
+
 ## 14.6.3 • [Train: stable]
 
 - chore(deps): update container image xwiki to 16.8.0-postgres-tomcat@42ae779 by renovate (#27482) • [`da61dc6`](https://github.com/truecharts/charts/commit/da61dc69756c34affeb195fa6588a29c4a1f53ee) • [@TrueCharts Bot] (2024-10-09)
