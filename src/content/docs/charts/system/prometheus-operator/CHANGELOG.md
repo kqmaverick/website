@@ -11,6 +11,10 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 :::
 
+## 8.5.1 • [Train: system]
+
+- chore(container): update image tccr.io/tccr/alpine to b2b2350 by renovate (#27652) • [`92e6f7e`](https://github.com/truecharts/charts/commit/92e6f7e0fd7df513b0b4f573999024ac5db6b6a8) • [@TrueCharts Bot] (2024-10-13)
+
 ## 8.5.0 • [Train: system]
 
 - Commit daily changes • [`d1abf80`](https://github.com/truecharts/charts/commit/d1abf80d1801bf7aef60884000acb8662fd08121) • [@TrueCharts-Bot] (2024-10-09)
