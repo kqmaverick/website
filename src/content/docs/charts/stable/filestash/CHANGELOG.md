@@ -11,6 +11,10 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 :::
 
+## 8.2.10 • [Train: stable]
+
+- chore(deps): update container image machines/filestash to latest@f0c5067 by renovate (#27638) • [`759428b`](https://github.com/truecharts/charts/commit/759428b58980a3900972f18be3b8b959abc1b3f8) • [@TrueCharts Bot] (2024-10-13)
+
 ## 8.2.9 • [Train: stable]
 
 - chore(deps): update container image machines/filestash to latest@495f2d3 by renovate (#27606) • [`c4df2de`](https://github.com/truecharts/charts/commit/c4df2dede028e9f994e065bbd927c0fed04fd4be) • [@TrueCharts Bot] (2024-10-12)
