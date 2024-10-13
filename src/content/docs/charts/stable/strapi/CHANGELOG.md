@@ -11,6 +11,10 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 :::
 
+## 15.2.1 • [Train: stable]
+
+- chore(container): update image naskio/strapi to 84690f6 by renovate (#27651) • [`b6eed95`](https://github.com/truecharts/charts/commit/b6eed9569c3af3e022a45b9c4524440c0e2900da) • [@TrueCharts Bot] (2024-10-13)
+
 ## 15.2.0 • [Train: stable]
 
 - Commit daily changes • [`d1abf80`](https://github.com/truecharts/charts/commit/d1abf80d1801bf7aef60884000acb8662fd08121) • [@TrueCharts-Bot] (2024-10-09)
