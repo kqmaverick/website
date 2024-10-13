@@ -13,6 +13,7 @@ If you need more than 2 scrolls to find your current version, please consider up
 
 ## 25.0.0 • [Train: library]
 
+- chore(container): update image tccr.io/tccr/scratch to 4aef9db by renovate (#27653) • [`58d7245`](https://github.com/truecharts/charts/commit/58d7245637f1f1780f8d3f88401c0eacf8507572) • [@TrueCharts Bot] (2024-10-13)
 - Commit daily changes • [`73826c1`](https://github.com/truecharts/charts/commit/73826c130ac19fadb82d12508b0ccc7b9f88669a) • [@TrueCharts-Bot] (2024-10-10)
 - move common-test to test-chart and use it when present • [`12dae70`](https://github.com/truecharts/charts/commit/12dae70f8d8887404c01c6339d08f9bf169e1c86) • [@Kjeld Schouten] (2024-10-09)
 - Commit daily changes • [`d1abf80`](https://github.com/truecharts/charts/commit/d1abf80d1801bf7aef60884000acb8662fd08121) • [@TrueCharts-Bot] (2024-10-09)
