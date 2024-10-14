@@ -68,7 +68,7 @@ Thanks to our use of TalHelper, a streamlined Talos configuration tool, there ar
 
 ### ClusterEnv
 
-This file that contains the most important settings, its content also gets saved on the cluster for (future) use with FluxCD and its settings get referenced in multiple places.
+This file that contains the most important settings, its content also gets saved on the cluster for use with FluxCD and its settings get referenced in multiple places.
 You're free to add settings as you please, or as you need them. Feel free to adapt them if needed!
 
 Primary settings that **need** to be adapted:
@@ -76,8 +76,12 @@ Primary settings that **need** to be adapted:
 - `MASTER1IP`: The static-DHCP IP that was set during the TalosOS network configuration
 - `VIP`: Contains the shared IP for all master-nodes
 - `METALLB_RANGE`: Contains the range MetalLB will allow IPs to be distributed in *(cannot overlap with any nodeIP or VIP, nor should it overlap with local dhcp range)*
-- `KUBEAPPS_IP`: The IP, within the MetalLB range, KubeApps will be made available on *(should be a free ip adres on your network, not overlapping with dhcp adresses)*
 - `DASHBOARD_IP`: The IP, within the MetalLB range, that the kubernetes monitoring/management dashboard will be made available on *(should be a free ip adres on your network, not overlapping with dhcp adresses)*
+
+#### (optional) Enabling FluxCD Bootstrapping
+
+If you want to setup FluxCD during bootstrap, be sure to enter a `GITHUB_REPOSITORY` in `ClusterEnv.yaml`.
+It should start with `ssh://`, so be sure to pick the SSH repository url option when copying your repository url from GitHub
 
 ### TalConfig
 
@@ -88,6 +92,35 @@ We generate an opinionated variant of this file, that is optimised to run with o
 We would advise to adapt the nodes so they fit your cluster design. By default we've a single node, with a single disk and a single network interface added. This is sufficient for all our VM guides and will be enabled for both 'controlplane', controlling the cluster itself, as well as 'worker' workloads.
 
 For more information on talconfig.yaml and talhelper, please see [here](https://budimanjojo.github.io/talhelper/latest/)
+
+## (optional) Setting Up Github SSH access for FluxCD
+
+If you want to use FluxCD, you need to add the SSH public key defined in `./ssh-public-key.txt`, to your Github Account.
+
+For More info, see:
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+## Generating ClusterConfig and updating files from Config
+
+:::caution[Compatibility]
+
+While our genconfig *can* generate a clusterconfig, that can get applied 'out of the box' through TalosCTL. By default, our `talconfig.yaml` is completely designed around our ClusterTool expected defaults.
+
+Hence these cannot be expected to work directly through TalosCTL.
+
+:::
+
+Clusterconfig are the files Talos itself sends to the nodes and uses to connect to the nodes. To create these files, which are not saved to git by default, from the config you created earlier, please run:
+
+In a terminal, run:
+
+`ClusterTool genconfig`
+
+or, on Windows:
+
+`ClusterTool.exe genconfig`
+
+This also will update a number of files we (pre)generate for FluxCD and/or prepare to be uploaded to the cluster. This includes things like the CNI (Cilium and MetalLB).
 
 ### Saving your config
 
@@ -128,41 +161,6 @@ To send the data to git run:
 - `git add *`
 - `git commit -a -m "some description"`
 - `git push`
-
-## (optional) Setting Up Github SSH access for FluxCD
-
-If you want to use FluxCD, you need to add the SSH public key defined in `./ssh-public-key.txt`, to your Github Account.
-
-For More info, see:
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-
-
-## (optional) Enabling FluxCD Bootstrapping
-
-If you want to setup FluxCD during bootstrap, be sure to enter a `GITHUB_REPOSITORY` in `ClusterEnv.yaml`.
-It should start with `ssh://`, so be sure to pick the SSH repository url option when copying your repository url from GitHub
-
-## Generating ClusterConfig and updating files from Config
-
-:::caution[Compatibility]
-
-While our genconfig *can* generate a clusterconfig, that can get applied 'out of the box' through TalosCTL. By default, our `talconfig.yaml` and `talconfig.yaml` are completely designed around our ClusterTool expected defaults.
-
-Hence these cannot be expected to work directly through TalosCTL.
-
-:::
-
-Clusterconfig are the files Talos itself sends to the nodes and uses to connect to the nodes. To create these files, which are not saved to git by default, from the config you created earlier, please run:
-
-In a terminal, run:
-
-`ClusterTool genconfig`
-
-or, on Windows:
-
-`ClusterTool.exe genconfig`
-
-This also will update a number of files we (pre)generate for FluxCD and/or prepare to be uploaded to the cluster. This includes things like the CNI (Cilium, MetalLB and KubeApps).
 
 ## Bootstrapping your first node
 
